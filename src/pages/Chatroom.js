@@ -21,7 +21,7 @@ export default function Chatroom() {
           <div className="border-2 border-indigo-500 rounded-t-md bg-gray-500 p-4 w-96 overflow-y-scroll flex flex-col h-128 max-w-7xl min-w-7xl">
             {messages.map(({ id, text, photoURL, uid }) => (
               <div>
-                <div key={id} className={`flex p-5 space-x-1 items-center my-2 rounded-full ${uid === auth.currentUser.uid ? 'rounded-bl-3xl bg-[#1B2431] flex-row-reverse float-right text-white' : 'rounded-br-3xl bg-[#fafafa] float-left'}`}>
+                <div key={id} className={`flex p-5 space-x-1 items-center my-2 rounded-full ${uid === auth.currentUser.uid ? 'rounded-br-3xl bg-[#1B2431] flex-row-reverse float-right text-white' : 'rounded-bl-3xl bg-[#fafafa] float-left'}`}>
                   <img className='bg-black rounded-full h-10 w-10 border-2 border-black' src={photoURL} alt="" />
                   <p className='font-medium text-md break-words'>{text}</p>
                 </div>
