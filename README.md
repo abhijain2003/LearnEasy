@@ -1,10 +1,21 @@
 # LearnEasy
 
-Hello, World we introduced a new way of learning. Educate your child in a fun way by playing games. we come up with many games for your child's learning to make easy.
+Hello World! We would like to introduce you to a new, fun, and easy way of learning. Educate your child in a fun way by playing games, interacting with visuals, and chatting with others. We have created many games, and visuals for your child to excel in their learning.
 
 ## 💡 Inspiration
 
+- Make education fun for children online
+- Learn valuable skills with gaming
+- Broaden the knownledge skills of the users
+- Broaden the amount of users, have a different language option 
+
 ## 💻 How it Works?
+
+- Head on over to the website and view the options 
+- Login using authenication 
+- Choose from a variety of topics
+- Play games, study from interactive visuals, or chat with other kids
+- If it is more useful for you, you can change the language input to match the one you want
 
 ## ⚙️ How we built it
 
@@ -31,9 +42,12 @@ Our application uses Firebase for the database to store chats and to authenticat
 
 ## 🧠 Challenges we ran into
 
+- None
+
 ## 🏅 Accomplishments that we're proud of
 
 - Completing the Project in such a short time frame.
+- Creating a website that is easy to use, looks great, and can help someone learn
 
 ## 📖 What we learned
 
@@ -43,3 +57,4 @@ Our application uses Firebase for the database to store chats and to authenticat
 ## 🚀 What's next for LearnEasy
 
 - Building a mobile app
+- Adding more fun educational games, and visuals
