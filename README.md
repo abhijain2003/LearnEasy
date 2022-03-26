@@ -2,7 +2,7 @@
 
 Hello, World we introduced a new way of learning. Educate your child in a fun way by playing games. we come up with many games for your child's learning to make easy.
 
-## 💡Inspiration
+## 💡 Inspiration
 
 ## 💻 How it Works?
 
@@ -16,7 +16,7 @@ Hello, World we introduced a new way of learning. Educate your child in a fun wa
 
 ## 🤝 Most Creative Use of GitHub
 
-- GitHub makes it easy to implement the **CI/CD workflow** and makes the deployment process easy.
+- When using GitHub we implemented the **CI/CD workflow** and made the deployment process easy. It helped us to get the project deployed on the network to be accessed by other people.
 - **Deploying** the project on GitHub helped us to get the project deployed on the network to be accessed by other people.
 - We are using GitHub for **Collaboration**. GitHub makes it easy to share code with others and helps a lot in collaboration. GitHub makes it easy to set up a project and get started.
 - We also used GitHub for planning and keeping track of our project and its progress with the help of the **GitHub project** management tool.

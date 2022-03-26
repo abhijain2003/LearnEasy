@@ -14,4 +14,4 @@ const firestore = firebase.firestore()
 
 const auth = firebase.auth()
 
-export {firestore, auth, app}
+export { firestore, auth, app }
