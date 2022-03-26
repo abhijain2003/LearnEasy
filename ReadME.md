@@ -40,6 +40,6 @@ Our application uses Firebase for the database to store chats and to authenticat
 - Deploying web app on GitHub Pages.
 - Efficient use of GitHub actions.
 
-## 🚀 What's next for Tidy The House Up
+## 🚀 What's next for LearnEasy
 
 - Building a mobile app
