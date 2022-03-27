@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>Multiplication Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--css-->
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+
+    <body>
+        <div id="container">
+            <!-- title-->
+            <h1 class="gametitle">Multiplication</h1>
+            <!--game board-->
+            <div id="board">            
+                <div id="correct">Correct</div>
+                <div id="incorrect">Incorect. Try again.</div>
+                <div id="score">Score: <span id="scoreNumber">0</span></div>
+                <div id="question"></div> 
+                <div id="instruction"></div>
+                <div id="answers">
+                    <form>
+                        <div>
+                            <label for="answerText">Answer</label>
+                            <input id="answerText" answer="answerText" type="text">
+                        </div>
+                        <button type="submit">submit</button>
+                    </form>
+                </div>
+                <div id="start">Start Game</div>
+                <div id="time">Time: <span id="remainingTime">55</span> sec</div>
+                <div id="gameover">GAME OVER Your score: <span id="finalscore">0</span></div>            
+            </div> 
+        </div>
+
+        <!--JavaScript-->
+        <script src="javascript.js"></script>
+
+    </body>
+</html>
