@@ -7,12 +7,12 @@ Hello World! We would like to introduce you to a new, fun, and easy way of learn
 - Make education fun for children online
 - Learn valuable skills with gaming
 - Broaden the knownledge skills of the users
-- Broaden the amount of users, have a different language option 
+- Broaden the amount of users, have a different language option
 
 ## 💻 How it Works?
 
-- Head on over to the website and view the options 
-- Login using authenication 
+- Head on over to the website and view the options
+- Login using authenication
 - Choose from a variety of topics
 - Play games, study from interactive visuals, or chat with other kids
 - If it is more useful for you, you can change the language input to match the one you want
@@ -21,7 +21,7 @@ Hello World! We would like to introduce you to a new, fun, and easy way of learn
 
 - Frontend: React JS, Tailwind
 - Backend: Firebase
-- 3D Model Rendering: Three.js and React Three Fiber
+- Multiple languages: i18n
 - GitHub: Collaboration, Hosting and Deployment
 - Tools: Git
 
@@ -42,7 +42,8 @@ Our application uses Firebase for the database to store chats and to authenticat
 
 ## 🧠 Challenges we ran into
 
-- None
+- The biggest challenge was the differece in time zones. But we collaborated and made the project complete in given time frame.
+- Another challange was to implement the multi-language option. We had to use the **i18n** to pass the language option to the components.
 
 ## 🏅 Accomplishments that we're proud of
 
@@ -51,6 +52,7 @@ Our application uses Firebase for the database to store chats and to authenticat
 
 ## 📖 What we learned
 
+- Using i18n.
 - Deploying web app on GitHub Pages.
 - Efficient use of GitHub actions.
 
@@ -58,3 +60,4 @@ Our application uses Firebase for the database to store chats and to authenticat
 
 - Building a mobile app
 - Adding more fun educational games, and visuals
+- Adding more languages

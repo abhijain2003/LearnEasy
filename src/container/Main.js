@@ -5,6 +5,7 @@ import Learn from '../pages/Learn'
 import Maths from '../pages/Maths'
 import Wordle from '../pages/Wordle'
 import Chatroom from '../pages/Chatroom'
+import Footer from '../components/Footer'
 
 function Main() {
     return (
@@ -17,6 +18,7 @@ function Main() {
                 <Route path="/wordle" element={<Wordle />} />
                 <Route path="/chat" element={<Chatroom />} />
             </Routes>
+            <Footer />
         </BrowserRouter>
     );
 }

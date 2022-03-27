@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import { Menu, Transition } from '@headlessui/react'
 import { Link } from 'react-router-dom'
+import "../i18n"
+import i18n from '../i18n'
+import { useTranslation } from 'react-i18next'
 import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
 import { auth } from '../services/firebase';
 
+const changeLang = (ln) => {
+    return () => {
+        i18n.changeLanguage(ln);
+    };
+};
+
 export default function Navbar() {
+
+    const { t } = useTranslation();
 
     const [showNavbar, setShowNavbar] = React.useState(false);
 
@@ -24,7 +36,7 @@ export default function Navbar() {
                                     <div className="flex items-start justify-between p-5 border-solid rounded-t">
                                         <Link activeClass="active" to="about" spy={true} smooth={true} offset={-150} duration={250}>
                                             <div className="text-2xl font-base tracking-wide cursor-pointer">
-                                                LearnEasy
+                                                {t('logo')}
                                             </div>
                                         </Link>
 
@@ -42,15 +54,15 @@ export default function Navbar() {
                                     >
 
                                         <Link to="/">
-                                            <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">Home</span>
+                                            <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">{t('navLinkHome')}</span>
                                         </Link>
 
                                         <Link to="/learn">
-                                            <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">Learn</span>
+                                            <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">{t('navLinkLearn')}</span>
                                         </Link>
 
                                         <Link to="/chat">
-                                            <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">Chatroom</span>
+                                            <span className="lg:inline-flex px-3 mx-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">{t('navLinkChat')}</span>
                                         </Link>
 
                                         <button className='bg-blue-600 text-white py-2 px-8 rounded-md ml-2' onClick={() => auth.signOut()}>
@@ -71,19 +83,70 @@ export default function Navbar() {
                     <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full text-xl lg:items-center items-start flex flex-col lg:h-auto space-x-2 mr-12" >
 
                         <Link to="/">
-                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">Home</span>
+                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">{t('navLinkHome')}</span>
                         </Link>
 
                         <Link to="/learn">
-                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">Learn</span>
+                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">{t('navLinkLearn')}</span>
                         </Link>
 
                         <Link to="/chat">
-                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">Chatroom</span>
+                            <span className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center dark:hover:bg-navHover hover:bg-secondary cursor-pointer text-white">{t('navLinkChat')}</span>
                         </Link>
 
+                        <Menu as="div" className="relative inline-block text-left">
+                            <div>
+                                <Menu.Button className="my-1 inline-flex justify-center w-full p-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md font-sourceSerifPro hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800">
+                                    {t('navChangeLang')}
+                                    <svg
+                                        className="w-5 h-5"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            fillRule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clipRule="evenodd"
+                                        />
+                                    </svg>
+                                </Menu.Button>
+                            </div>
+
+                            <Transition
+                                as={Fragment}
+                                enter="transition ease-out duration-100"
+                                enterFrom="transform opacity-0 scale-95"
+                                enterTo="transform opacity-100 scale-100"
+                                leave="transition ease-in duration-75"
+                                leaveFrom="transform opacity-100 scale-100"
+                                leaveTo="transform opacity-0 scale-95"
+                            >
+                                <Menu.Items static className="origin-top-right absolute right-0 w-40 rounded-md shadow-lg bg-white ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
+
+                                    <Menu.Item>
+                                        <div className="w-full px-14 py-3 text-sm cursor-pointer" onClick={changeLang("en")} >
+                                            English
+                                        </div>
+                                    </Menu.Item>
+
+                                    <Menu.Item>
+                                        <div className="w-full px-16 py-3 text-sm cursor-pointer" onClick={changeLang("hi")} >
+                                            हिंदी
+                                        </div>
+                                    </Menu.Item>
+
+                                    <Menu.Item>
+                                        <div className="w-full px-12 py-3 text-sm pl-16 cursor-pointer" onClick={changeLang("ja")} >
+                                            日本
+                                        </div>
+                                    </Menu.Item>
+
+                                </Menu.Items>
+                            </Transition>
+                        </Menu>
+
                         <button className='bg-[#6F5DE0] text-white py-2 px-8 rounded-md' onClick={() => auth.signOut()}>
-                            Logout
+                            {t('navLinkLogout')}
                         </button>
 
                     </div>

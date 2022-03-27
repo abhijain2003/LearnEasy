@@ -1,0 +1,24 @@
+{
+    "langName": "English",
+    "logo": "LearnEasy",
+  
+    "navLinkHome": "Home",
+    "navLinkLearn": "Learn",
+    "navLinkChat": "Chat",
+    "navChangeLang": "Change Language",
+    "navLinkLogout": "Logout",
+
+    "homeTitle": "Who we are",
+    "hoemAbout": "We would like to introduce you to a new, fun, and easy way of learning. Educate your child in a fun way by playing games, interacting with visuals, and chatting with others. We have created many games, and visuals for your child to excel in their learning.",
+    "homeCheckPost": "Check post",
+    "homwWhatEsle": "What else do we have",
+    "homeDesc": "LearnEasy is a web app where you can:",
+    "homePt1": "Make education fun for children online",
+    "homePt2": "Learn valuable skills with gaming",
+    "homePt3": "Broaden the knownledge skills of the users",
+    "homePt4": "Broaden the amount of users, have a different language option",
+  
+    "footerWith": "with",
+    "footerBy": "by Team Solution-Builder"
+  }
+  

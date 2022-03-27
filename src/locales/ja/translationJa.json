@@ -1,0 +1,23 @@
+{
+  "langName": "日本",
+  "logo": "LearnEasy",
+
+  "navLinkHome": "家",
+  "navLinkLearn": "学び",
+  "navLinkChat": "チャット",
+  "navChangeLang": "言語を変えてください",
+  "navLinkLogout": "ログアウト",
+
+  "homeTitle": "私たちは誰ですか",
+  "hoemAbout": "新しく、楽しく、簡単な学習方法を紹介します。ゲームをしたり、ビジュアルを操作したり、他の人とチャットしたりして、楽しい方法で子供を教育します。私たちはあなたの子供が彼らの学習に優れているために多くのゲームとビジュアルを作成しました。",
+  "homeCheckPost": "投稿を確認する",
+  "homwWhatEsle": "他に何がありますか",
+  "homeDesc": "LearnEasyは、次のことができるWebアプリです。",
+  "homePt1": "子供たちの教育を楽しくする",
+  "homePt2": "ゲームで貴重なスキルを学ぶ",
+  "homePt3": "ユーザーの知識スキルを広げる",
+  "homePt4": "ユーザーの数を増やし、異なる言語オプションを使用する",
+
+  "footerWith": "と",
+  "footerBy": "チームソリューションビルダーによる"
+}
